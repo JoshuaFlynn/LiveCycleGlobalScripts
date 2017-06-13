@@ -36,5 +36,5 @@ function DCCArrModify(tempObject,argstoappend,argstoremove)
 	return tempObjectCopy;
 }
 
-function DCCArr(arg){ return DCCArrModify({},arg); }
+function DCCArr(arg,arg2){ return DCCArrModify({},arg,arg2); }
 function DCC(){ return DCCArr(Array.prototype.slice.call(arguments)); }
