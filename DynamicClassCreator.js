@@ -18,7 +18,7 @@ function DynamicClassCreator()
 	
 	if(!IsEven(arg.length)){return null;}
 	
-	var TempObject;
+	var TempObject = {};
 	for(var i = 0;i < arg.length;i=i+2)
 	{
 		TempObject[arg[i]] = arg[i+1];
