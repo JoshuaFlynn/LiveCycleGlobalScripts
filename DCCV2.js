@@ -13,7 +13,7 @@ function IsAnArray(anArray)
 //remove is optional
 function DCCArrModify(tempObject,argstoappend,argstoremove)
 {
-	var tempObjectCopy = tempObject;
+	var tempObjectCopy = new tempObject();
 	if(IsAnArray(argstoappend))
 	{
 		if(IsEven(argstoappend.length))
