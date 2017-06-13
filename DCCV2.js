@@ -16,11 +16,11 @@ function DCCArrModify(tempObject,argstoappend,argstoremove)
 	var tempObjectCopy = tempObject;
 	if(IsAnArray(argstoappend))
 	{
-		if(IsEven(arg.length))
+		if(IsEven(argstoappend.length))
 		{
 			for(var i = 0;i < argstoappend.length;i=i+2)
 			{
-				tempObjectCopy[arg[i]] = arg[i+1];
+				tempObjectCopy[argstoappend[i]] = argstoappend[i+1];
 			}
 		}
 	}
@@ -29,7 +29,7 @@ function DCCArrModify(tempObject,argstoappend,argstoremove)
 	{
 		for(var i = 0;i < argstoremove.length;i++)
 		{
-			delete tempObjectCopy[arg[i]];
+			delete tempObjectCopy[argstoremove[i]];
 		}
 	}
 	
